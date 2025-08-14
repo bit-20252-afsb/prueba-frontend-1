@@ -10,7 +10,7 @@ import { User } from '../../interfaces/auth.interface';
 })
 export class Home {
   usersList : User[] = [];
-  constructor(private authService: AuthService){
+  constructor(private readonly authService: AuthService){
     this.getAllUsers();
     console.log(this.authService.isLoggedIn())
   }
