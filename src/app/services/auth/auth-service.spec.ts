@@ -4,7 +4,7 @@ import { AuthService } from './auth-service';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { APIResponse, User } from '../../interfaces/auth.interface';
 
-fdescribe('AuthService', () => {
+describe('AuthService', () => {
   let service: AuthService;
   let httpMock: HttpTestingController;
   let mockToken : string;
